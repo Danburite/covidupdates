@@ -54,8 +54,8 @@ export const Main = ({covidNumbers, regions}) => {
                         <FormControl>
                             <InputLabel>Country Filter</InputLabel>
                             <Select 
-                                defaultValue={selectedRegion}
-                                value={selectedRegion.name}
+                                defaultValue={selectedRegion ? selectedRegion : ""}
+                                value={selectedRegion ? selectedRegion : ""}
                                 onChange={handleSelectChange}
                             >
                                 {countryOptions.map(country => {

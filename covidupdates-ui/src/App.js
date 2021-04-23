@@ -28,11 +28,9 @@ function App() {
 
   return (
     <div className="covidupdates-app">
-      <navbar>
-        <div className="navbar-title">
-          <h1>COVID-19 Updates</h1>
-        </div>
-      </navbar>
+      <div className="navbar-title">
+        <h1>COVID-19 Updates</h1>
+      </div>
       <Main covidNumbers={covidNumbers} regions={regions}/>
       <footer>
         <div className="footer-title">

@@ -14,7 +14,6 @@ const currentWorldUpdate = () => {
 
 const currentRegionUpdate = (country) => {
     const currentRegionUpdateLink = 'https://api.quarantine.country/api/v1/summary/region?region=' + country;
-    console.log(currentRegionUpdateLink);
 
     let call = axios.get(currentRegionUpdateLink)
         .then(function (response) {
