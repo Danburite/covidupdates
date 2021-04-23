@@ -1,0 +1,61 @@
+.main-toggle-buttons {
+    text-align: center;
+
+    .MuiToggleButton-root {
+        border-color: $white;
+        color: $primary-color;
+    }
+
+    .MuiToggleButton-root.Mui-selected {
+        background-color: lighten($secondary-color, 10%);
+        color: $accent-black;
+
+        &:hover {
+            background-color: $secondary-color;
+            color: $black;
+            transition: background-color 0.4s ease;
+        }
+    }
+}
+
+.main-country-select-filter {
+
+    width: 15rem;
+    margin-right: 3rem;
+    margin-left: auto;
+    margin-top: 1rem;
+
+    .MuiFormControl-root {
+        width: 100%;
+    }
+
+    .MuiInputLabel-formControl {
+        padding: 0.25rem;
+    }
+    .MuiFormLabel-root {
+        color: $primary-color;
+    }
+    .MuiFormLabel-root.Mui-focused {
+        color: $primary-color;
+    }
+
+    .MuiSelect-root {
+        padding: 0.5rem;
+        color: $white;
+        border: solid $secondary-color;
+    }
+
+    .MuiInput-underline:before {
+        border-bottom: $secondary-color;
+    }
+
+    .MuiInput-underline:after {
+        border-bottom: $secondary-color;
+    }
+
+    .MuiSvgIcon-root {
+        color: $white;
+        padding-right: 0.5rem;
+    }
+
+}

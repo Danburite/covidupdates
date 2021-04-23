@@ -1,0 +1,128 @@
+.country-card-data-display {
+
+    .MuiPaper-root {
+        text-align: center;
+        margin: 1rem;
+        
+    }
+
+    .country-card-column-one {
+        .country-card-active-cases {
+            padding: 1.25rem;
+                h3 {
+                    font-size: 1.5rem;
+                    margin: 1rem;
+                }
+                p {
+                    font-size: 1rem;
+                    margin: 1rem;
+                }
+        }
+
+        .country-card-tested {
+            padding: 1.25rem;
+                h3 {
+                    font-size: 1.5rem;
+                    margin: 1rem;
+                }
+                p {
+                    font-size: 1rem;
+                    margin: 1rem;
+                }
+        }
+
+        .country-card-critical {
+            padding: 1.25rem;
+                h3 {
+                    font-size: 1.5rem;
+                    margin: 1rem;
+                }
+                p {
+                    font-size: 1rem;
+                    margin: 1rem;
+                }
+        }
+
+        .MuiPaper-root {
+            height: 24.75%;
+            width: 95%;
+        }
+    }
+
+    .country-card-column-two {
+        margin: auto;
+
+        .MuiPaper-root {
+            height: 91%;
+
+            .country-card-total-cases {
+                padding: 4.25rem;
+                h2 {
+                    font-size: 5rem;
+                    margin: 1rem;
+                }
+                span {
+                    font-size: 3rem;
+                    font-weight: bold;
+                    margin: 1rem;
+                }
+            }
+        }
+
+        .country-card-update-date {
+            text-align: center;
+            font-size: 0.5rem;
+        }
+    }
+
+    .country-card-column-three {
+        .country-card-recovered {
+            padding: 1rem;
+            h3 {
+                font-size: 1.5rem;
+                margin: 1rem;
+            }
+        }
+
+        .country-card-recovery-ratio {
+            display: flex;
+            padding: 1rem;
+            h3 {
+                font-size: 1rem;
+                margin: 1rem;
+            }
+            p {
+                font-size: 2rem;
+                margin: 1rem;
+                margin: auto;
+            }
+        }
+
+        .country-card-deaths {
+            padding: 1rem;
+            h3 {
+                font-size: 1.5rem;
+                margin: 1rem;
+            }
+        }
+
+        .country-card-death-rate {
+            display: flex;
+            padding: 1rem;
+            h3 {
+                font-size: 1rem;
+                margin: 1rem;
+            }
+            p {
+                font-size: 2rem;
+                margin: 1rem;
+                margin: auto;
+            }
+        }
+
+        .MuiPaper-root {
+            width: 95%;
+        }
+    }
+
+}

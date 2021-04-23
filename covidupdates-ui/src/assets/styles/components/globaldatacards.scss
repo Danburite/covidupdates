@@ -1,0 +1,134 @@
+.global-card-data-display {
+
+    .MuiPaper-root {
+        text-align: center;
+        margin: 1rem;
+        
+    }
+
+    .global-card-column-one {
+        .global-card-active-cases {
+            padding: 1.25rem;
+                h3 {
+                    font-size: 1.5rem;
+                    margin: 1rem;
+                }
+                p {
+                    font-size: 1rem;
+                    margin: 1rem;
+                }
+        }
+
+        .global-card-tested {
+            padding: 1.25rem;
+                h3 {
+                    font-size: 1.5rem;
+                    margin: 1rem;
+                }
+                p {
+                    font-size: 1rem;
+                    margin: 1rem;
+                }
+        }
+
+        .global-card-critical {
+            padding: 1.25rem;
+                h3 {
+                    font-size: 1.5rem;
+                    margin: 1rem;
+                }
+                p {
+                    font-size: 1rem;
+                    margin: 1rem;
+                }
+        }
+
+        .MuiPaper-root {
+            height: 24.75%;
+            width: 95%;
+        }
+    }
+
+    .global-card-column-two {
+        margin: auto;
+
+        .MuiPaper-root {
+            height: 91%;
+
+            .global-card-total-cases {
+                padding: 4.25rem;
+                h2 {
+                    font-size: 5rem;
+                    margin: 1rem;
+                }
+                span {
+                    font-size: 3rem;
+                    font-weight: bold;
+                    margin: 1rem;
+                }
+            }
+        }
+
+        .global-card-update-date {
+            text-align: center;
+            font-size: 0.5rem;
+        }
+    }
+
+    .global-card-column-three {
+        .global-card-recovered {
+            h3 {
+                font-size: 1.5rem;
+                margin: 1rem;
+            }
+            p {
+                font-size: 1rem;
+                margin: 1rem;
+            }
+        }
+
+        .global-card-recovery-ratio {
+            display: flex;
+            padding: 1rem;
+            h3 {
+                font-size: 1rem;
+                margin: 1rem;
+            }
+            p {
+                font-size: 2rem;
+                margin: 1rem;
+                margin: auto;
+            }
+        }
+
+        .global-card-deaths {
+            h3 {
+                font-size: 1.5rem;
+                margin: 1rem;
+            }
+            p {
+                font-size: 1rem;
+                margin: 1rem;
+            }
+        }
+
+        .global-card-death-rate {
+            display: flex;
+            padding: 1rem;
+            h3 {
+                font-size: 1rem;
+                margin: 1rem;
+            }
+            p {
+                font-size: 2rem;
+                margin: 1rem;
+                margin: auto;
+            }
+        }
+
+        .MuiPaper-root {
+            width: 95%;
+        }
+    }
+
+}

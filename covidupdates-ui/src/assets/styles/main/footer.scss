@@ -1,0 +1,15 @@
+.footer-title {
+    display: flex;
+
+    .footer-description {
+        margin: auto;
+        font-size: 0.25rem;
+        color: $accent-white;
+    }
+
+    .footer-author {
+        margin: auto;
+        font-size: 0.25rem;
+        color: $accent-white;
+    }
+}
