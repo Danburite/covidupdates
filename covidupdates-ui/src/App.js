@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { currentWorldUpdate, allAvailableRegions } from "./functions/APICalls";
 import { Main } from "./pages/Main";
+import GitHubIcon from '@material-ui/icons/GitHub';
 import "./assets/styles/site.scss";
-//import { BrowserRouter as Router, Route } from "react-router-dom";
-//import logo from './logo.svg';
 
 function App() {
   const [regions, setRegions] = useState([]);
@@ -40,6 +39,9 @@ function App() {
           </div>
           <div className="footer-author">
             Developed by Sherman Lee
+          </div>
+          <div className="footer-icons">
+            <a href="https://github.com/Danburite"><GitHubIcon /></a>
           </div>
         </div>
       </footer>
