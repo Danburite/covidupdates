@@ -14,8 +14,8 @@ RUN npm -v
 RUN node -v
 
 # Install app dependencies
-COPY package.json /usr/src/app/
-COPY package-lock.json /usr/src/app/
+COPY package.json /usr/src/app/covidupdates-ui/
+COPY package-lock.json /usr/src/app/covidupdates-ui/
 
 RUN npm install
 
