@@ -5,8 +5,8 @@ node:
     image: react-test
     container_name: node
     volumes:
-      - .:/app
-      - /app/node_modules
+      - .:/usr/app
+      - /usr/app/node_modules
     command: npm run dev
     ports:
       - "3000:3000"
