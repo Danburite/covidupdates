@@ -1,6 +1,7 @@
 import React from "react";
 import { shallow, mount } from "enzyme";
 import { GlobalDataCards } from "../components/GlobalDataCards";
+import { Grid, Paper } from '@material-ui/core';
 
 //Global Data Cards Unit Render Tests
 describe('<GlobalDataCards/> component tests', () => {
@@ -28,42 +29,130 @@ describe('<GlobalDataCards/> component tests', () => {
     });
       
     it("renders active cases card", () => {
-        const activeCase = "Active Cases";
+        const activeCase = (
+            <Paper>
+                <div className="global-card-active-cases">
+                    <h3>
+                        Active Cases
+                    </h3>
+                    <p>
+                        {mockStats.summary.active_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                    </p>
+                </div>
+            </Paper>
+        );
         expect(wrapper.contains(activeCase)).toEqual(true);
     });
 
     it("renders deaths card", () => {
-        const deaths = "Deaths";
+        const deaths = (
+            <Paper>
+                <div className="global-card-deaths">
+                    <h3>
+                        Deaths
+                    </h3>
+                    <p>
+                        {mockStats.summary.deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                    </p>
+                </div>
+            </Paper>
+        );
         expect(wrapper.contains(deaths)).toEqual(true);
     });
     
     it("renders total cases card", () => {
-        const totalCase = "Total Cases";
+        const totalCase = (
+            <Paper>
+                <div className="global-card-total-cases">
+                    <h2>
+                        Total Cases
+                    </h2>
+                    <span>
+                        {mockStats.summary.total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                    </span>
+                </div>
+            </Paper>
+        );
         expect(wrapper.contains(totalCase)).toEqual(true);
     });
 
     it("renders recovered card", () => {
-        const recovered = "Recovered";
+        const recovered = (
+            <Paper>
+                <div className="global-card-recovered">
+                    <h3>
+                        Recovered
+                    </h3>
+                    <p>
+                        {mockStats.summary.recovered.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                    </p>
+                </div>
+            </Paper>
+        );
         expect(wrapper.contains(recovered)).toEqual(true);
     });
 
     it("renders critical card", () => {
-        const critical = "Critical";
+        const critical = (
+            <Paper>
+                <div className="global-card-critical">
+                    <h3>
+                        Critical
+                    </h3>
+                    <p>
+                        {mockStats.summary.critical.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                    </p>
+                </div>
+            </Paper>
+        );
         expect(wrapper.contains(critical)).toEqual(true);
     });
 
     it("renders tested card", () => {
-        const tested = "Tested";
+        const tested = (
+            <Paper>
+                <div className="global-card-tested">
+                    <h3>
+                        Tested
+                    </h3>
+                    <p>
+                        {mockStats.summary.tested.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                    </p>
+                </div>
+            </Paper>
+        );
         expect(wrapper.contains(tested)).toEqual(true);
     });
 
     it("renders death ratio card", () => {
-        const deathRatio = "Death Rate";
+        const deathRatio = (
+            <Paper>
+                <div className="global-card-death-rate">
+                    <h3>
+                        Death Rate
+                    </h3>
+                    <p>
+                        {(mockStats.summary.death_ratio * 100).toFixed(2) + "%"}
+                    </p>
+                </div>
+            </Paper>
+        );
         expect(wrapper.contains(deathRatio)).toEqual(true);
     });
 
     it("renders recovery ratio card", () => {
-        const recoveryRate = "Recovery Rate";
+        const recoveryRate = (
+            <Paper>
+                <div className="global-card-recovery-ratio">
+                    <h3>
+                        Recovery Rate
+                    </h3>
+                    <p>
+                        {(mockStats.summary.recovery_ratio * 100).toFixed(2) + "%"}
+                    </p>
+                </div>
+            </Paper>
+        );
         expect(wrapper.contains(recoveryRate)).toEqual(true);
     });
 });

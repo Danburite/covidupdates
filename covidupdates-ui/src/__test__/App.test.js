@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
 import App from "../App";
-
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 //App Unit Render Tests
 describe('<App/> component unit tests', () => {
@@ -11,14 +11,6 @@ describe('<App/> component unit tests', () => {
         wrapper = shallow(<App/>);
     });
     
-    afterEach(() => {
-        jest.clearAllMocks();
-    });
-
-    it("renders without crashing", () => {
-        shallow(<App />);
-    });
-      
     it("renders page header", () => {
         const header = (
             <div className="navbar-title">
@@ -38,6 +30,9 @@ describe('<App/> component unit tests', () => {
                     </div>
                     <div className="footer-author">
                         Developed by Sherman Lee
+                    </div>
+                    <div className="footer-icons">
+                        <a href="https://github.com/Danburite"><GitHubIcon /></a>
                     </div>
                 </div>
             </footer>
