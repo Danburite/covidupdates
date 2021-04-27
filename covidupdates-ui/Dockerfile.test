@@ -14,8 +14,8 @@ RUN npm -v
 RUN node -v
 
 # Install app dependencies
-COPY PACKAGE_JSON /usr/src/app/
-COPY PACKAGE_LOCK_JSON /usr/src/app/
+COPY package.json /usr/src/app/
+COPY package-lock.json /usr/src/app/
 
 RUN npm install
 
