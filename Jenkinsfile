@@ -18,7 +18,9 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'npm test'
+                dir('./covidupdates-ui') {
+                    sh 'npm test'
+                }
             }
         }
     }
