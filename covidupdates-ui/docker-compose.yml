@@ -1,0 +1,6 @@
+services:
+    webservice:
+      build:
+        context: ../             # your path to context
+        dockerfile: ./Dockerfile # path relative to context
+  
