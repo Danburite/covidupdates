@@ -10,9 +10,9 @@ pipeline {
     }
     stages {
         stage('Build') {
-            dir('./covidupdates-ui') {
-                steps {
-                sh 'npm install'
+            steps {
+                dir('./covidupdates-ui') {
+                    sh 'npm install'
                 }
             }
         }
