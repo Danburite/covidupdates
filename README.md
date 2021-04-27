@@ -1,5 +1,5 @@
 <h2>Overview</h2>
-<p>The COVID-19 Updates page is used to view current stats on cases related to COVID-19 including but not limited to active cases, critical cases, recovery rates, etc.</p>
+<p>The <a href="https://master.d28vwu4ziwo01s.amplifyapp.com/">COVID-19 Updates</a> page is used to view current stats on cases related to COVID-19 including but not limited to active cases, critical cases, recovery rates, etc.</p>
 
 <h2>Code Base</h2>
 <p>The project was made using React for the frontend and utilizes the CoronaFeed API to make requests for populating data</p>
