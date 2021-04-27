@@ -13,9 +13,6 @@ WORKDIR /usr/src/app
 RUN npm -v
 RUN node -v
 
-
-COPY /covidupdates/package.json PACKAGE_JSON
-COPY /covidupdates/package-lock.json PACKAGE_LOCK_JSON
 # Install app dependencies
 COPY PACKAGE_JSON /usr/src/app/
 COPY PACKAGE_LOCK_JSON /usr/src/app/
