@@ -14,8 +14,7 @@ RUN npm -v
 RUN node -v
 
 # Install app dependencies
-COPY . /app
-COPY package*.json /app
+COPY . ./app
 
 RUN npm install
 
