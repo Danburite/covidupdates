@@ -1,6 +1,6 @@
 node:
-    build:
-      context: .
+    build: .
+      context: 
       dockerfile: ./Dockerfile
     image: react-test
     container_name: node
